@@ -1,0 +1,20 @@
+Crear módulo de seguridad del sistema
+	Gestionar registro de personas(CRUD)
+	Gestionar registro de usuarios, "Solo se adminte un usuario por persona."
+	Gestionar registro de roles 
+	Gestionar registro de vistas del sistema
+	Administrar un único rol por usuario
+	Administrar las vistas asociadas al rol, puede tener cero, una o varias asociadas
+		
+	
+	
+	
+Crear módulo de notas 	
+	Gestionar registro de grupos
+	Gestionar registro de retos retos
+	Gestionar registro de formadores
+	Gestionar registro de tripulantes
+	Asociar uno o varios formadores al grupo
+	Asociar uno o varios tripulantes al grupo
+	
+	

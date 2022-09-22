@@ -1,0 +1,47 @@
+body{
+    background-color: lightslategrey;  
+}
+
+h1{
+   font-size: 55px;
+   background-color: aliceblue;
+}
+h2{
+    background-color: lightgreen;
+}
+
+p{
+    background-color: floralwhite;
+    font-size: 20px;
+    color: #EF9B28;
+}
+
+img{
+    width: 50%;
+    height: auto;
+}
+button{
+    border-radius: 15%;
+    background-color: darkkhaki;
+    background-color: #3262B3;
+}
+
+.azul{
+    
+    color:#3262B3;
+}
+.rosa{
+    color: #FC0763
+}
+
+.naranja{
+    color: #EF9B28;
+}
+
+.div{
+    font-size: 55px;
+    background-color: aliceblue;
+}
+
+
+
