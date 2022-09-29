@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejemplo 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/global.css'>
+    <script src='../js/Ejemplo1.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="cuerpo">
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+                    <td colspan="2">
+                        EJERCICIOS
+                    </td>
+                </tr>
+            </thead>            
+            <tbody class=".table-striped">
+                <tr>
+                    <td>
+                        Calcular el total que una persona debe pagar en una llantera, si el precio de cada llanta es de $800 si se compran menos de 5 llantas y de $700 si se compran 5 o más.
+                    </td>
+                    <td>
+                        <input type="button" value="Generar resultado" id="Ejemplo1" name="Ejemplo1" onclick="Calcular(1)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        En un supermercado se hace una promoción, mediante la cual el cliente obtiene un descuento dependiendo de un número que se escoge al azar. Si el numero escogido es menor que 74 el descuento es del 15% sobre el total de la compra, si es mayor o igual a 74 el descuento es del 20%. Obtener cuánto dinero se le descuenta.
+                    </td>
+                    <td>
+                        <input type="button" value="Generar resultado" id="Ejemplo2" name="Ejemplo2" onclick="Calcular(2)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Calcular el número de pulsaciones que debe tener una persona por cada 10 segundos de ejercicio aeróbico; la fórmula que se aplica cuando el sexo es femenino es:
+                        -	num. pulsaciones = (220 - edad)/10
+                        y si el sexo es masculino:
+                        -	num. pulsaciones = (210 - edad)/10
+    
+                    </td>
+                    <td>
+                        <input type="button" value="Generar resultado" id="Ejemplo3" name="Ejemplo3" onclick="Calcular(3)">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+   </div>
+</body>
+</html>

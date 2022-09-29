@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registro Usuarios</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form id="usuarios" name="usuarios">
+        <div id="divCuerpo" class="p-3 mb-2 bg-secondary text-white">
+            <div id="divEmcabezado" class="emcabezado">
+                <h1 id="h1TituloGeneral" class="p-3 mb-2 bg-warning text-dark" >
+                    Registro Usuarios
+                </h1>
+            </div>
+            <div id="divInputData" class="p-3 mb-2 bg-light text-dark">
+                <table >                   
+                    <tr>
+                        <td>
+                            <label class="inputText">Usuarios: </label>
+                            <input type="hidden" name="id" id="id" value="">
+                        </td>
+                        <td>
+                            <input  class="form-control" type="text" placeholder="" name="usuario" id="usuario" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Contraseña: </label>
+                        </td>
+                        <td>
+                            <input  type="password" class="form-control" id="contrasenia" name="contrasenia" placeholder="Password">
+                        </td>
+                    </tr>                               
+                    <tr>
+                        <td>
+                            <label class="inputText">Estado: </label>
+                        </td>
+                        <td>
+                            <select class="form-control form-control-lg" name="estado" id="estado">
+                                <option value="">--Seleccionar--</option>
+                                <option value="0">Inactivo</option>
+                                <option value="0">Activo</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Persona: </label>
+                        </td>
+                        <td>
+                            <select class="form-control form-control-lg" name="persona" id="persona">
+                                <option value="personaId">--Seleccionar--</option>
+                                <option value="0">Inactivo</option>
+                                <option value="0">Activo</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Rol: </label>
+                        </td>
+                        <td>
+                            <select class="form-control form-control-lg" name="rol" id="rol">
+                                <option value="">--Seleccionar--</option>
+                                <option value="rolId">Admmin</option>
+                                <option value="rolId">Vendedor</option>
+                                <option value="rolId">Consultor</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="divBotones" class="p-3 mb-2 bg-light text-dark"class="p-3 mb-2 bg-light text-dark">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="button" class="btn btn-success" value="Agregar"  id="agregar" name="agregar">
+                        </td>
+                        <td>
+                            <input type="button" class="btn btn-success" value="Modificar" id="modificar" name="modificar">
+                        </td>
+                        <td>
+                            <input type="button" class="btn btn-success" value="Eliminar" id="eliminar" name="eliminar">
+                        </td>
+                        <td>
+                            <input type="button" class="btn btn-success" value="Limpiar" id="limpiar" name="limpiar">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="divResultData" class="resultData">
+                <table id="tabData">
+                    <thead class="tHeadText">
+                        <tr>
+                            <td>Usuario</td>
+                            <td>Contraseña</td>
+                            <td>Persona</td>
+                            <td>Rol</td>
+                            <td>Estado</td>
+                            <td colspan="2">Acciones</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Admin</td>
+                            <td>124</td>
+                            <td>ariel</td>
+                            <td>administrador</td>
+                            <td>Activo</td>
+                            <td><img class="iconData" src="../libreria/icon/edit-svgrepo-com.svg"></td>
+                            <td><img class="iconData" src="../libreria/icon/delete-bin-svgrepo-com.svg"></td>
+                        </tr>
+                        <tr>
+                            <td>consult</td>
+                            <td>3134</td>
+                            <td>pedro</td>
+                            <td>Consultor</td>
+                            <td>Activo</td>
+                            <td><img class="iconData" src="../libreria/icon/edit-svgrepo-com.svg"></td>
+                            <td><img class="iconData" src="../libreria/icon/delete-bin-svgrepo-com.svg"></td>
+                        </tr>
+                        <tr>
+                            <td>ventas</td>
+                            <td>7649</td>
+                            <td>leidy</td>
+                            <td>Vendedor</td>
+                            <td>Activo</td>
+                            <td><img class="iconData" src="../libreria/icon/edit-svgrepo-com.svg"></td>
+                            <td><img class="iconData" src="../libreria/icon/delete-bin-svgrepo-com.svg"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

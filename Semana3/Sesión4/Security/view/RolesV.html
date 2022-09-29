@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registro Roles</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/Global.css'>
+    <script src=''></script>
+</head>
+<body>
+    <form id="roles" name="roles">
+        <div id="divCuerpo" class="cuerpo">
+            <div id="divEmcabezado" class="emcabezado">
+                <h1 id="h1TituloGeneral" class="tituloGeneral" >
+                    Registro Roles
+                </h1>
+            </div>
+            <div id="divInputData" class="inputData">
+                <table border="1">                    
+                    <tr>
+                        <td>
+                            <input type="hidden" name="id" id="id" value="">
+                            <label class="inputText">Nombre: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="nombre" id="nombre" value="">
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td>
+                            <label class="inputText">Estado: </label>
+                        </td>
+                        <td>
+                            <select name="estado" id="estado">
+                                <option value="">--Seleccionar--</option>
+                                <option value="0">Inactivo</option>
+                                <option value="0">Activo</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="divBotones" class="botones">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="button" value="Agregar"  id="agregar" name="agregar">
+                        </td>
+                        <td>
+                            <input type="button" value="Modificar" id="modificar" name="modificar">
+                        </td>
+                        <td>
+                            <input type="button" value="Eliminar" id="eliminar" name="eliminar">
+                        </td>
+                        <td>
+                            <input type="button" value="Limpiar" id="limpiar" name="limpiar">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="divResultData" class="resultData">
+                <table id="tabData">
+                    <thead class="tHeadText">
+                        <tr>
+                            <td>Nombre</td>                            
+                            <td>Estado</td>
+                            <td colspan="2">Acciones</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>                          
+                            <td>Admin</td>
+                            <td>Activo</td>
+                            <td><img class="iconData" src="../libreria/icon/edit-svgrepo-com.svg"></td>
+                            <td><img class="iconData" src="../libreria/icon/delete-bin-svgrepo-com.svg"></td>
+                        </tr>
+                        <tr>                          
+                            <td>Consultor</td>
+                            <td>Activo</td>
+                            <td><img class="iconData" src="../libreria/icon/edit-svgrepo-com.svg"></td>
+                            <td><img class="iconData" src="../libreria/icon/delete-bin-svgrepo-com.svg"></td>
+                        </tr>
+                        <tr>                          
+                            <td>Vendedor</td>
+                            <td>Inactivo</td>
+                            <td><img class="iconData" src="../libreria/icon/edit-svgrepo-com.svg"></td>
+                            <td><img class="iconData" src="../libreria/icon/delete-bin-svgrepo-com.svg"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

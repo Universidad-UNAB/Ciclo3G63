@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registro Personas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/Global.css'>
+    <script src=''></script>
+</head>
+<body>
+    <form id="personas" name="personas">
+        <div id="divCuerpo" class="cuerpo">
+            <div id="divEmcabezado" class="emcabezado">
+                <h1 id="h1TituloGeneral" class="tituloGeneral" >
+                    Registro Personas
+                </h1>
+            </div>
+            <div id="divInputData" class="inputData">
+                <table border="1">
+                    <tr>
+                        <td>
+                            <label class="inputText">Tipo de documento: </label>
+                        </td>
+                        <td>
+                            <input type="hidden" name="id" id="id" value="">
+                            <select name="tipoDocumento" id="tipoDocumento">
+                                <option value="">--Seleccionar--</option>
+                                <option value="CC">CC</option>
+                                <option value="CE">CE</option>
+                                <option value="TI">TI</option>
+                                <option value="DNI">DNI</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Documento: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="documento" id="documento" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Primer Nombre: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="primerNombre" id="primerNombre" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Segundo Nombre: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="segundoNombre" id="segundoNombre" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Primer Apellido: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="primerApellido" id="primerApellido" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Segundo Apellido:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="segundoApellido" id="segundoApellido" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Correo: </label>
+
+                        </td>
+                        <td>
+                            <input type="text" name="correo" id="correo" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Telefono: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="telefono" id="telefono" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="inputText">Estado: </label>
+                        </td>
+                        <td>
+                            <select name="estado" id="estado">
+                                <option value="">--Seleccionar--</option>
+                                <option value="0">Inactivo</option>
+                                <option value="0">Activo</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="divBotones" class="botones">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="button" value="Agregar"  id="agregar" name="agregar">
+                        </td>
+                        <td>
+                            <input type="button" value="Modificar" id="modificar" name="modificar">
+                        </td>
+                        <td>
+                            <input type="button" value="Eliminar" id="eliminar" name="eliminar">
+                        </td>
+                        <td>
+                            <input type="button" value="Limpiar" id="limpiar" name="limpiar">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="divResultData" class="resultData">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Documento</td>
+                            <td>Nombre</td>
+                            <td>Correo</td>
+                            <td>Telefono</td>
+                            <td>Estado</td>
+                            <td colspan="2">Acciones</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CC-10343</td>
+                            <td>Jesus</td>
+                            <td>ariel5252@</td>
+                            <td>3014543</td>
+                            <td>Activo</td>
+                            <td><img src="../libreria/icon/edit-svgrepo-com.svg"></td>
+                            <td><img src="../libreria/icon/delete-bin-svgrepo-com.svg"></td>
+                        </tr>
+                        <tr>
+                            <td>CC-2472384</td>
+                            <td>Camila</td>
+                            <td>camila@</td>
+                            <td>423423</td>
+                            <td>Activo</td>
+                            <td><img src="../libreria/icon/edit-svgrepo-com.svg"></td>
+                            <td><img src="../libreria/icon/delete-bin-svgrepo-com.svg"></td>
+                        </tr>
+                        <tr>
+                            <td>CC-328755</td>
+                            <td>Sergio</td>
+                            <td>sergio@</td>
+                            <td>78346324</td>
+                            <td>Inactivo</td>
+                            <td><img src="../libreria/icon/edit-svgrepo-com.svg"></td>
+                            <td><img src="../libreria/icon/delete-bin-svgrepo-com.svg"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
