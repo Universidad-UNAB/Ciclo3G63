@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registro Usuarios</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
+
+
+    <!-- Libreria bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Libreria jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Script del fomulario -->
+    <script src='../../js/security/User.js'></script>
+
+</head>
+
+<body>
+    <!-- Inicio formulario total -->
+    <form id="usuarios" name="usuarios">
+
+        <!-- Inicio contenedor general -->
+        <div id="divCuerpo" class="">
+            <div id="divEmcabezado" class="">
+                <h2>Registro Usuarios</h2>
+            </div>
+
+            <!-- Inicio Div formulario de captura de datos -->
+            <div id="divInputData">
+                <table class="table table-hover">                    
+                    <tr>
+                        <td>
+                            Usuario:
+                            <input type="hidden" name="id" id="id" value="">
+                        </td>
+                        <td><input class="form-control" type="text" name="userName" id="userName" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña:</td>
+                        <td><input type="password" class="form-control" type="text" name="" name="userPassword" id="userPassword" value=""></td>
+                    </tr>    
+                    <tr>
+                        <td>Personas:</td>
+                        <td>
+                            <select name="personaId" id="personaId" class="form-control">
+                                <option value="">--Seleccionar--</option>
+                                <!-- Aquí se imprime los datos de la base de datos -->
+                            </select>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td>Roles:</td>
+                        <td>
+                            <select name="rolId" id="rolId" class="form-control">
+                                <option value="">--Seleccionar--</option>
+                                <!-- Aquí se imprime los datos de la base de datos -->
+                            </select>
+                        </td>
+                    </tr>              
+                    <tr>
+                        <td>Estado:</td>
+                        <td>
+                            <select name="estado" id="estado" class="form-control">
+                                <option value="">--Seleccionar--</option>
+                                <option value="1">Activo</option>
+                                <option value="0">Inactivo</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Fin Div formulario de captura de datos -->
+
+            <!-- Inicio Div de la botonera -->
+            <div class="btn-group btn-group-lg">
+                <button type="button" id="agregar" name="agregar" class="btn btn-success" onclick="addRow();">Agregar</button>
+                <br>
+                <button type="button" id="modificar" name="modificar" class="btn btn-success" onclick="updateRow();">Modificar</button>
+            </div>
+            <br><br>
+            <!-- Fin Div de la botonera -->
+
+            <!-- Inicio Div para mostar los datos de la base de datos -->
+            <div id="divResultData" class="">
+                <table id="" class="table table-striped">
+                    <thead class="">
+                        <tr>
+                            <td>Usuario</td>
+                            <td>Contraseña</td>
+                            <td>Persona</td>
+                            <td>Rol</td>
+                            <td>Estado</td>
+                            <td colspan="2">Acciones</td>
+                        </tr>
+                    </thead>
+                    <tbody id="resultData">
+                        <!-- Aquí llega la consulta de la base de datos -->
+                       
+                       
+                        <!-- <tr>
+                            <td>ariel5253</td>
+                            <td>*****</td>
+                            <td>Jesús González</td>
+                            <td>Admin</td>
+                            <td>Activo</td>
+                            <td><img class="iconData" src="../../assets/icon/edit-svgrepo-com.svg"></td>
+                            <td><img class="iconData" src="../../assets/icon/delete-bin-svgrepo-com.svg"></td>
+                        </tr> -->
+                        
+                    </tbody>
+                </table>
+            </div>
+            <!-- Fin  Div para mostar los datos de la base de datos -->
+
+        </div>
+        <!-- Inicio contenedor general -->
+
+    </form>
+    <!-- Inicio formulario total -->
+</body>
+
+</html>
+<script>
+    loadTable();
+    loadTablePerson();
+    loadTableRole();
+</script>
